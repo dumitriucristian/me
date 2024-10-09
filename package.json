@@ -19,6 +19,7 @@
         "vue": "^3.3.13"
     },
     "dependencies": {
-        "quill": "^2.0.2"
+        "quill": "^2.0.2",
+        "tw-elements": "^2.0.0"
     }
 }

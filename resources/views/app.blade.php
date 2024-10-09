@@ -125,7 +125,7 @@
                             </span>
                         </a>
                     </li>
-                    <li data-scroll-nav="1" class="relative group">
+                    <li data-scroll-nav="1" cl/home/cristi/Development/personal/themeforest-6L8E9LEG-minfo-tailwind-personal-resume-html-template/minfo-html/assets/fontsass="relative group">
                         <a href="#about" class="flex items-center space-x-2 group">
                             <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
                                 <i class="fal fa-user"></i>
