@@ -134,5 +134,7 @@ export default {
         },
     },
 
-    plugins: [forms, typography],
+    plugins: [
+        forms, typography, require('tw-elements/plugin.cjs')
+    ],
 };

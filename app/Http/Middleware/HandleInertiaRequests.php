@@ -16,6 +16,21 @@ class HandleInertiaRequests extends Middleware
      */
     protected $rootView = 'app';
 
+     /**
+     * Determines the root view dynamically.
+     */
+    public function rootView(Request $request): string
+    {
+        // Check if the current route is a dashboard route
+        if ($request->routeIs('dashboard*')) {
+           
+            return 'dashboard'; // Use dashboard.blade.php for dashboard-related routes
+
+        }
+
+        return 'app'; // Us
+    }
+
     /**
      * Determines the current asset version.
      *

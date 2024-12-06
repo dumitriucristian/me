@@ -109,7 +109,7 @@
     var skillSlider = new Swiper('.skills-slider .swiper', {
         spaceBetween: 30,
         slidesPerView: 2,
-        loop: !1,
+        loop: true,
         speed: 800,
         breakpoints: {
             600: {
@@ -118,6 +118,9 @@
             800: {
                 slidesPerView: 4,
             },
+        },
+        autoplay:{
+            delay: 1000,
         },
         navigation: {
             nextEl: '#skill .button-next',

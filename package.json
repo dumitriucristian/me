@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "quill": "^2.0.2",
+        "swiper": "^11.1.14",
         "tw-elements": "^2.0.0"
     }
 }

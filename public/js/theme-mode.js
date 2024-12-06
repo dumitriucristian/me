@@ -1,9 +1,6 @@
 // Site theme Color mode
-if (localStorage.theme === 'dark' ) {
-    document.documentElement.classList.add('dark')
-} else {
-    document.documentElement.classList.remove('dark');
-}
+document.documentElement.classList.add('dark')
+
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),
@@ -34,7 +31,7 @@ function setLightTheme() {
     $('#light_theme').addClass('active');
 };
 function onThemeSwitcherItemClick(e) {
-    var theme = this.dataset.theme;
+    var theme = "dark";
     if (theme == "dark") {
         setDarkTheme();        
     } else {
@@ -53,9 +50,11 @@ if ( localStorage.theme === 'dark' ) {
     $('#light_theme').addClass('active');
 }
 if(version) {
-    if (version == 'dark') {
+    setDarkTheme();
+  /*  if (version == 'dark') {
         setDarkTheme();
     } else if (version == 'light') {
         setLightTheme(); 
     }
+        */
 }
