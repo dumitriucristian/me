@@ -18,17 +18,19 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
+    
 ])->group(function () {
-
+    Inertia::setRootView('dashboard');
     Route::get('/dashboard', function () {
+        
         return Inertia::render('Dashboard');
     })->name('dashboard');
 
-    Route::get('/test', function () {
+    Route::get('/dashboard/test', function () {
         return Inertia::render('Test');
-    })->name('test');
+    })->name('dashboard/test');
 
-    Route::get('/test-doi', function () {
+    Route::get('/dashboard/test-doi', function () {
         return Inertia::render('Test-doi');
-    })->name('test-doi');
+    })->name('dashboard/test-doi');
 });
